@@ -75,6 +75,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -d /home/container/ -s /bin/bash container
+
 ENV USER=container HOME=/home/container
 
 WORKDIR /home/container
